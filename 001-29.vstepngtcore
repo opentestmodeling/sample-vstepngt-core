@@ -1,0 +1,23 @@
+[GUIパス数] {
+    items {
+        "100"
+    }
+    "GUI要素のC0"
+}
+
+[OSの種類] {
+    items {
+        "Win95系"
+        "WinNT系"
+    }
+}
+
+[GUIパス ✕ OSの種類] <<combination>> {
+    items {
+        "200"
+    }
+    "GUI要素のC0 ✕ OSの種類"
+}
+
+& [GUIパス ✕ OSの種類] .... [GUIパス数]
+& [GUIパス ✕ OSの種類] .... [OSの種類]

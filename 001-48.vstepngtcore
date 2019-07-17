@@ -1,0 +1,35 @@
+[Win系OS] {
+    items {
+        "9"
+    }
+    quality-risk {
+        importance = 9
+        severity = 1
+    }
+    "すべて"
+}
+
+[Win9x系OS] {
+    items {
+        "95" "98" "SE" "Me"
+    }
+    quality-risk {
+        importance = 1
+        severity = 9
+    }
+    "すべて"
+}
+
+[WinNT系OS] {
+    items {
+        "2K" "XP" "VS" "7" "8"
+    }
+    quality-risk {
+        importance = 9
+        severity = 5
+    }
+    "すべて"
+}
+
+& [Win系OS] <|-- [Win9x系OS]
+& [Win系OS] <|-- [WinNT系OS]
