@@ -1,4 +1,4 @@
-container kouseitest {
+container 構成テスト {
     [動作環境]
     [プラットフォーム] [ネットワーク]
     & [動作環境] <|-- [プラットフォーム]
@@ -8,20 +8,20 @@ container kouseitest {
     & [プラットフォーム] <|-- [ハードウェア]
 }
 
-container fukatest {
-    container a "ボリューム" {
+container 負荷テスト {
+    container ボリューム {
 
     }
 
-    container b "高頻度" {
+    container 高頻度 {
 
     }
 
-    container c "ストレージ" {
+    container ストレージ {
 
     }
 
-    container d "ロングラン" {
+    container ロングラン {
 
     }
 }
